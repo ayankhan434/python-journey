@@ -21,3 +21,24 @@ a={1:10,2:20,3:30}
 
 for i in a:
     print(a[i])
+
+marks = {
+    "Rahul": 85,
+    "Aman": 92,
+    "Priya": 88
+}
+
+topper = max(marks, key=marks.get)
+
+print(topper, "scored", marks[topper])
+
+s = "apple"
+freq = {}
+
+for ch in s:
+    if ch in freq:
+        freq[ch] += 1
+    else:
+        freq[ch] = 1
+
+print(freq)
